@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>Site Acessível</h1>
+
+    <div class="acessibilidade">
+        <button onclick="alterarFonte(2)" aria-label="Aumentar fonte">
+            A+
+        </button>
+
+        <button onclick="alterarFonte(-2)" aria-label="Diminuir fonte">
+            A-
+        </button>
+
+        <button onclick="resetarFonte()" aria-label="Restaurar fonte">
+            A
+        </button>
+    </div>
+</header>
+
+<main id="conteudo">
+    <h2>Bem-vindo!</h2>
+    <p>
+        Este site foi desenvolvido pensando na acessibilidade para pessoas com deficiência visual.
+        Utilize os botões acima para ajustar o tamanho da fonte conforme sua necessidade.
+    </p>
+
+    <p>
+        O conteúdo pode ser lido com mais conforto graças aos recursos de acessibilidade.
+    </p>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
