@@ -1,30 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
-    margin: 20px;
-    background-color: #ffffff;
-    color: #000000;
+let tamanhoFonte = 18;
+
+function alterarFonte(valor) {
+    tamanhoFonte += valor;
+
+    if (tamanhoFonte < 12) {
+        tamanhoFonte = 12;
+    }
+
+    if (tamanhoFonte > 36) {
+        tamanhoFonte = 36;
+    }
+
+    document.body.style.fontSize = tamanhoFonte + "px";
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.acessibilidade button {
-    padding: 10px;
-    margin: 5px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button:focus {
-    outline: 3px solid #005fcc;
-}
-
-h1, h2 {
-    color: #003366;
+function resetarFonte() {
+    tamanhoFonte = 18;
+    document.body.style.fontSize = tamanhoFonte + "px";
 }
